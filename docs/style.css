@@ -8,16 +8,43 @@ body, html
 {
     height: 100%;
     width: 100%;
+    font-family: 'Karla', sans-serif;
+}
+p
+{
+    font-size: 1.1em;
+}
+section h1, section h2, section h3, section h4
+{
+    text-decoration: underline;
+}
+section h2
+{
+    text-transform: uppercase;
+    color: #D60006;
+}
+h2
+{
+    font-size: 1.5em;
+}
+h3
+{
+    font-size: 1.3em;
 }
 h4
 {
     font-style: italic;
     font-weight: normal;
 }
+
 p
 {
     text-align: justify;
 }
+/************************/
+/******* En-Tête ********/
+/************************/
+
 header
 {
     height: 100px;
@@ -31,23 +58,45 @@ header
     width: 1200px;
     color: white;
 }
+/******************************/
+/******* Corps de page ********/
+/******************************/
+
+
+ul
+{
+    list-style-type: none;
+}
+nav
+{
+    width: 300px;
+    padding: 5px;
+    position: fixed;
+    bottom: 50%;
+    left: 0;
+    text-align: center;
+}
+nav ul li a
+{
+    display: block;
+    height: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.3em;
+    color: black;
+    margin: 3px;
+    box-shadow: 0 0 15px gray;
+}
+nav ul li a:hover
+{
+    box-shadow: 0 0 5px red;
+}
+
 #main
 {
     margin-top: 50px;
     display: flex;
     justify-content: center;
-}
-nav
-{
-    width: 210px;
-    padding: 5px;
-    position: fixed;
-    bottom: 50%;
-    left: 0;
-}
-ul
-{
-    list-style-type: none;
 }
 section
 {
@@ -55,9 +104,10 @@ section
     display: flex;
     flex-direction: column;
 }
-img
+article
 {
-    width: 1000px;
+    margin-top: 80px;
+    padding: 20px;
 }
 figure
 {
@@ -66,11 +116,11 @@ figure
     justify-content: center;
     align-items: center;
 }
-article
+img
 {
-    margin-top: 80px;
-    padding: 20px;
+    width: 1000px;
 }
+
 aside
 {
     margin-top: 10px;
@@ -84,7 +134,21 @@ th, td
     border: 1px solid black;
     padding: 10px;
     text-align: justify;
+    background-color: #F9F9F9;
 }
+td a
+{
+    color: blue;
+}
+td ul
+{
+    list-style-type: circle;
+    margin-left: 20px;
+}
+
+/****************************/
+/******* Bas de page ********/
+/****************************/
 footer
 {
     height: 100px;
