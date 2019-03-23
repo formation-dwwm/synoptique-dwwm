@@ -47,15 +47,14 @@ p
 
 header
 {
-    height: 100px;
+    padding: 10px 20px;
     background-color: #3F464C;
     display: flex;
     justify-content: center;
 }
 #titleHeader
 {
-    margin-top: 10px;
-    width: 1200px;
+    width: 100%;
     color: white;
 }
 /******************************/
@@ -67,40 +66,50 @@ ul
 {
     list-style-type: none;
 }
-nav
-{
+@media screen and (min-width:1500px){
+  nav {
     width: 300px;
-    padding: 5px;
     position: fixed;
     bottom: 50%;
     left: 0;
     text-align: center;
+    box-shadow: 1px 4px 15px grey;
+  }
+}
+nav ul{
+
+}
+nav ul li {
+  padding: 3px 5px;
+  display: flex;
+  flex-direction: column;
+  min-height: 50px;
+  justify-content: center;
+  box-shadow: 0 1px 2px #bdbdbd;
+}
+nav ul li:hover
+{
+    box-shadow: 0 0 5px red;
 }
 nav ul li a
 {
     display: block;
-    height: 50px;
     text-decoration: none;
     font-weight: bold;
     font-size: 1.3em;
     color: black;
-    margin: 3px;
-    box-shadow: 0 0 15px gray;
 }
-nav ul li a:hover
-{
-    box-shadow: 0 0 5px red;
-}
+
 
 #main
 {
-    margin-top: 50px;
     display: flex;
     justify-content: center;
 }
 section
 {
-    width: 1200px;
+    width: 100%;
+    max-width: 900px;
     display: flex;
     flex-direction: column;
 }
@@ -118,7 +127,8 @@ figure
 }
 img
 {
-    width: 1000px;
+    width: 100%;
+    max-width: 1000px;
 }
 
 aside
@@ -144,6 +154,20 @@ td ul
 {
     list-style-type: circle;
     margin-left: 20px;
+}
+@media screen and (max-width: 780px) {
+  table,
+  tbody,
+  tr,
+  td {
+    display: block;
+    width: auto;
+  }
+
+  td {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }
 
 /****************************/
