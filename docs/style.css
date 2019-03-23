@@ -57,6 +57,12 @@ header
     width: 100%;
     color: white;
 }
+
+.github-ribbon {
+  position: absolute;
+  right: 0;
+}
+
 /******************************/
 /******* Corps de page ********/
 /******************************/
