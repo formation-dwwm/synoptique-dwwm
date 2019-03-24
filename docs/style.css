@@ -45,12 +45,12 @@ p
 /******* En-Tête ********/
 /************************/
 
-header
-{
-    padding: 10px 20px;
-    background-color: #3F464C;
-    display: flex;
-    justify-content: center;
+header {
+  
+  padding: 10px 20px;
+  background-color: #3F464C;
+  display: flex;
+  justify-content: center;
 }
 #titleHeader
 {
@@ -63,9 +63,67 @@ header
   right: 0;
 }
 
+@media screen and (max-width:1500px) {
+  header {
+    padding: 10px 20px 10px 60px;
+  }
+
+  header h1{
+    font-size: 1.3em;
+  }
+  header h3 {
+    font-size: 1.1em;
+  }
+}
+
 /******************************/
-/******* Corps de page ********/
+/*********** Menu *************/
 /******************************/
+
+.hamburger {
+  height: 64px;
+  top: 0;
+  width: 100%;
+  position: fixed;
+}
+.hamburger:focus-within {
+  background: #3F464C; 
+}
+.hamburger__button {
+  position: fixed;
+  top: 7px;
+  left: 5px;
+  font-size: 21px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.30980392156862746);
+  border-radius: 50%;
+  padding: 10px 3px;
+  color: white;
+  width: 50px;
+  height: 50px;
+  background-color: #3F464C;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+.hamburger__button:focus {
+  background: #68747d;
+  border-color: white;
+  outline: none;
+}
+.hamburger__button + nav {
+  opacity: 0;
+  pointer-events: none;
+}
+.hamburger .hamburger__button:focus + nav,
+.hamburger nav:focus-within {
+  display: block;
+  position: fixed;
+  width: 100%;
+  top: 64px;
+  background: white;
+  opacity: 1;
+  pointer-events: all;
+}
+
 
 
 ul
@@ -73,13 +131,18 @@ ul
     list-style-type: none;
 }
 @media screen and (min-width:1500px){
-  nav {
+  .hamburger__button + nav {
     width: 300px;
     position: fixed;
     bottom: 50%;
     left: 0;
     text-align: center;
     box-shadow: 1px 4px 15px grey;
+    opacity: 1;
+  }
+
+  .hamburger__button{
+    display: none;
   }
 }
 nav ul{
@@ -107,6 +170,10 @@ nav ul li a
 }
 
 
+
+/******************************/
+/******* Corps de page ********/
+/******************************/
 #main
 {
     display: flex;
