@@ -182,8 +182,8 @@ Notre code sera si court que nous n'aurons besoin ici que d'un fichier. Créer p
 **Déclarer les champs metas à exposer**
 
 ```php
-// woo-rest-meta.php
 <?php
+// woo-rest-meta.php
 /**
  * Plugin Name:       Woo Rest Meta
  * Description:       Expose WooCommerce Meta Fields through WP REST Api
