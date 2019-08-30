@@ -1,2 +1,2 @@
-# synoptique dwwm
- Lien live https://opulisdynamics.github.io/synoptique-dwwm/
+# Synoptique dwwm
+ Lien live https://formation-dwwm.github.io/synoptique-dwwm/
