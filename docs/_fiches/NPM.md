@@ -1,5 +1,7 @@
 ---
-layout: page
+layout: fiche
+title: NPM
+tag_list: ""
 ---
 
 # NPM: Node Package Manager

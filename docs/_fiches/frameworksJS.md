@@ -1,6 +1,7 @@
 ---
 layout: fiche
-tags: FrameworkJS, Javascript, Front-End
+title: Frameworks JS
+tag_list: FrameworkJS, Javascript, Front-End
 ---
 
 # Les Frameworks Javascript
@@ -20,14 +21,14 @@ Les moins connus :
 
 ## Pourquoi, Comment ?
 
-• Boîte à outils –––> efficacité ++
-• Cadre / Architecture, pour une certaine maintenabilité (surtout Angular)
-• Base de code "saine"
-    *** Moins de dette technologique possible ***
-    ––> en évitant de réinventer la roue
-    ––> mis à jour
-    ––> mitige certaines failles de sécuritées.
-    *** Moins de dette technologique possible ***
+- Boîte à outils –––> efficacité ++
+- Cadre / Architecture, pour une certaine maintenabilité (surtout Angular)
+- Base de code "saine"
+>    *** Moins de dette technologique possible ***<br/>
+>    ––> en évitant de réinventer la roue<br/>
+>    ––> mis à jour<br/>
+>    ––> mitige certaines failles de sécuritées.<br/>
+>    *** Moins de dette technologique possible ***
 
 * Angular ––> Gros à priori sur architecture (components, pages, routes, fichiers...). Vient en plus avec des modules pour le routing, les requêtes http, les service workers, ...
 
@@ -35,11 +36,15 @@ Les moins connus :
 
 ## Comment efficacité/optimisation ++
 
-• Briques toutes faites
-• Framework documenté
-• Générateur de projets de base
-• Opérations DOM —> *LOURDES*
-    ––> Virtual DOM __=>__ "Faux DOM en JS" __=>__ opérations "DOM" plus rapides *(pur JS)* __=>__ le résultat est utilisé pour "patcher" le vrai DOM
+- Briques toutes faites
+- Framework documenté
+- Générateur de projets de base
+- Opérations DOM —> *LOURDES*
+
+    ––> Virtual DOM<br/>
+    __=>__ "Faux DOM en JS" <br/>
+    __=>__ opérations "DOM" plus rapides *(pur JS)* <br/>
+    __=>__ le résultat est utilisé pour "patcher" le vrai DOM<br/>
 
 > Le vrai DOM est lent !!
 > Les éléments HTML présents dans le vrai DOM sont synchronisés avec plusieurs aspects du navigateur: arbre HTML, DOM JS, présentation CSS, Events, ... 
@@ -49,7 +54,7 @@ Les moins connus :
 ## Ressources
 
 **Comprendre le virtual DOM (FR)**
-https://la-cascade.io/comprendre-le-virtual-dom/
+[https://la-cascade.io/comprendre-le-virtual-dom/](https://la-cascade.io/comprendre-le-virtual-dom/)
 
 **Virtual DOM vs Real Dom, Angular, React, ...**
 [Article Medium](https://medium.com/@ahaseeb12251998/virtual-dom-vs-real-dom-angular-vs-react-framework-vs-libraries-spas-vs-mpa-s-946fceb70955)

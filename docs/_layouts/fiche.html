@@ -1,13 +1,31 @@
 ---
 layout: default
+no_wrap: true
 ---
 
-{% if page.tags %}
-<section class="fiche-tags">
-    {{ page.tags }}
-</section>
-{% endif %}
+<section class="jumbo fiche-meta">
+    <div class="wrapper">
+        <h2 class="fiche-title">{{ page.title | escape }}</h2>
+        
+        <h3 class="fiche-author">{{ page.author | default: 'Formation DWWM' }}</h3>
 
-<article>
-    {{ content }}
-</article>
+        {% if page.short %}
+        <p class="page-short">{{ page.short }}</p>
+        {% endif %}
+
+        {% if page.tag_list %}
+            {% assign tags = page.tag_list | split: "," %}
+            <section class="fiche-tags">
+                {%- for tag in tags -%}
+                <label class="tag-item">{{ tag | strip }}</label>
+                {%- endfor -%}
+            </section>
+        {% endif %}
+    </div>
+</section>
+
+<div class="wrapper">
+    <article>
+        {{ content }}
+    </article>
+</div>

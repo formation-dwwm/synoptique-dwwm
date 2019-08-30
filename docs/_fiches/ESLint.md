@@ -1,5 +1,7 @@
 ---
-layout: page
+layout: fiche
+title: ESLint
+tag_list: ""
 ---
 
 # ESLint Documentation

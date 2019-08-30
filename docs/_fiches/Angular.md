@@ -1,7 +1,8 @@
 ---
 layout: fiche
 title: Angular 2+
-tags: FrameworkJS, Javascript, Front-End
+tag_list: "FrameworkJS, Javascript, Front-End"
+short: "Rapide présentation des principaux éléments d'Angular 2+"
 ---
 
 # Angular
@@ -77,7 +78,7 @@ Et bien d'autres :
 ### Pipes
 
 Utilisées pour modifier des données avant leur affichage, typiquement depuis les vues (html).
-Une Pipe est en fait une fonction de transformation, utilisé au format pipe (type unix) soit "inversé" par rapport à l'ordre des fonctions :
+Une Pipe est en fait une fonction de transformation, utilisée au format pipe (type unix) soit "inversé" par rapport à l'ordre des fonctions :
 
 `myDate | date | capitalize` <=> `capitalize(date(myDate))`
 

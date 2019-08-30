@@ -1,5 +1,7 @@
 ---
-layout: page
+layout: fiche
+title: WordPress
+tag_list: ""
 ---
 
 # WordPress

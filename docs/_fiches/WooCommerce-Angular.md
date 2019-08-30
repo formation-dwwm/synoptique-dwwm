@@ -1,5 +1,7 @@
 ---
-layout: page
+layout: fiche
+title: SPA Angular avec WooCommerce
+tag_list: ""
 ---
 
 # WooCommerce avec un client Angular

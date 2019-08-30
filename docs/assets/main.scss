@@ -4,6 +4,37 @@
 
 @import "minima";
 
-.page-heading {
-    color: blue !important;
+.post-link {
+  font-size: 18px;
+}
+
+
+
+
+.fiche-meta {
+  margin: -30px 0 20px;
+  position: relative;
+  background: #333;
+  padding: 10px 15px;
+  color: #eee;
+
+  .fiche-title {
+    color: white;
+  }
+}
+
+.fiche-tags {
+  margin-bottom: 10px;
+
+  .tag-item {
+    margin-right: 5px;
+    border-radius: 3px;
+    background: #222;
+    padding: 3px 7px;
+    color: white;
+  }
+
+  &.small {
+
+  }
 }
