@@ -1,3 +1,7 @@
+---
+layout: page
+---
+
 # WooCommerce avec un client Angular
 
 Maintenant que nous avons un beau CMS flambant neuf sous la main, et une application angular faisant catalogue d'e-commerce, nous allons chercher à les faire travailler ensemble. C'est un cas typique d'une utilisation **détachée** d'un CMS.
