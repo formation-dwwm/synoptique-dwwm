@@ -37,6 +37,9 @@ collections:
   fiches:
     output: true
     layout: fiche
+  stagiaires:
+    output: true
+    layout: stagiaire
 
 feed:
   path: '/feed/posts.xml'

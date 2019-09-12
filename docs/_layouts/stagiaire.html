@@ -1,0 +1,32 @@
+---
+layout: default
+no_wrap: true
+---
+
+<section class="jumbo stagiaire-meta">
+    <div class="wrapper">
+
+        {% if page.short %}
+        <p class="page-short">{{ page.short }}</p>
+        {% endif %}
+        
+        {% if page.tag_list %}
+        {% assign tags = page.tag_list | split: "," %}
+        <section class="stagiaire-tags">
+            {%- for tag in tags -%}
+            <label class="tag-item">{{ tag | strip }}</label>
+            {%- endfor -%}
+        </section>
+        {% endif %}
+
+        <h3 class="stagiaire-author">{{ page.author | default: 'Stagiaires' }}</h3>
+
+    </div>
+</section>
+
+
+<div class="wrapper">
+    <article>
+        {{ content }}
+    </article>
+</div>

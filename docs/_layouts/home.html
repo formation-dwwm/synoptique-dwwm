@@ -34,11 +34,41 @@ layout: default
       {%- endfor -%}
     </ul>
 
+
+    {%- if site.stagiaires.size > 0 -%}
+    <h2>{{ page.list_title | default: "stagiaires" }}</h2>
+    <ul class="post-list">
+      {%- for stagiaire in site.stagiaires -%}
+      <li class="stagiaire-item">
+        <h3>
+          <a class="post-link" href="{{ stagiaire.url | relative_url }}">
+            {{ stagiaire.title | escape }}
+          </a>
+        </h3>
+        {% if stagiaire.tag_list %}
+            {% assign tags = stagiaire.tag_list | split: "," %}
+            <div class="stagiaire-tags small">
+                {%- for tag in tags -%}
+                <label class="tag-item">{{ tag | strip }}</label>
+                {%- endfor -%}
+            </div>
+        {% endif %}
+        {%- if site.show_excerpts -%}
+          {{ stagiaire.excerpt }}
+        {%- endif -%}
+      </li>
+      {%- endfor -%}
+    </ul>
+  {%- endif -%}
+
+
     <p class="feed-subscribe">
       <a href="{{ '/feed/fiches.xml' | relative_url }}">
         <svg class="svg-icon orange"><use xlink:href="{{ 'assets/minima-social-icons.svg#rss' | relative_url }}"></use></svg><span>Subscribe</span>
       </a>
     </p>
   {%- endif -%}
+
+
 
 </div>
