@@ -2,7 +2,8 @@
 layout: stagiaire
 title: Documenter son code
 author: Lionel ENSFELDER
-----
+---
+
 ## Introduction
 
 >« Ce que l’on conçoit bien s’énonce clairement... »
